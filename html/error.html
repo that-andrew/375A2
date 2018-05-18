@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Returning You Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css">
+        <script type="text/javascript">
+        
+        var count = 5;
+        var redirect = "/";
+        
+        function countDown(){
+            var timer = document.getElementById("timer");
+            
+            if(count > 0){
+                count--;
+                timer.innerHTML = "Returning to the homepage in "+count+" seconds.";
+                setTimeout("countDown()", 500);
+            } else {
+                window.location.href = redirect;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <header>A wild error appeared!</header>
+        <main>
+            <div id="redirect">
+                <table>
+                    <tr>
+                        <td style="text-align:center">
+                            <span id="timer"><script type="text/javascript">countDown();</script></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+    <footer></footer>
+</html>

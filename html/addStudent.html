@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Add Student</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css">
+
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h3>Enter the details of the student you would like to add in the form below.</h3>
+            <form id="addStudent" method="POST" action="/add" target="_self">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td><label for="StudentID">Student ID:</label></td>
+                            <td><input type="text" name="studentID" id="studentID" required="true" pattern=".{8}" size="8" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="First Name">First Name:</label></td>
+                            <td><input type="text" name="firstName" id="firstName" required="true"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="LastName">Last Name:</label></td>
+                            <td><input type="text" name="lName" id="lName" required="true"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Age">Age:</label></td>
+                            <td><input type="number" name="age" id="age" min="10" max="120" required="true"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Gender:</label></td>
+                            <td>
+                                <label for="Male">Male</label>
+                                <input type="radio" name="gender" id="gender" value="Male">
+                                <label for="Female">Female</label>
+                                <input type="radio" name="gender" id="gender" value="Female">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Dgree">Degree:</label></td>
+                            <td><input type="text" name="dgree" id="dgree" required="true"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button type="reset"><span>Clear Form</span></button>
+                <button type="submit" value="Submit"><span>Submit</span></button>
+            </form>
+        </div>
+    </main>
+</body>
+<footer><a href="/">Return Home</a></footer>
+</html>

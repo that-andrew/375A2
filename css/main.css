@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+    
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    font-size: 2vw;
+    width: 100vw;
+    text-align: center;
+    background-color: #1b1b1b;
+    z-index: 1;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #424242;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #FFFFFF;
+    z-index: 1;
+}
+    
+main {
+    position: relative;
+    margin-top: 5vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    width: 100vw;
+    background-color: #1b1b1b;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+    align-content: center;
+    z-index: 1;
+}
+
+ul li{
+    list-style: none;
+}
+
+.resultsdiv {
+    display: none;
+}
+    
+
+    
+button {
+    align-content: center;
+    margin:2vw;
+    padding: 0.5vw;
+    background-color: #FFFFFF;
+    border: none;
+    color: #1b1b1b;
+    text-align: center;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+    
+button span {
+    cursor: pointer;
+    font-size: 2vw;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+button span:after {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    
+}
+
+button:hover span {
+    font-size: 3vw;
+    border-radius: 0;
+}
+
+button:hover span:after {
+    opacity: 1;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, td, td label {
+    font-size: 1vw;
+    height: auto;
+}
+
+fieldset {
+    border:0;
+}
+
+input[type=text] {
+    background-color: #424242;
+    color: white;
+    border-radius: 0.5vw;
+    transition: background-color 1s;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+    background-color: white;
+    color: #424242
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: none;
+    margin: none;
+    padding: none;
+    text-align: center;
+    width: 100vw;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 3vw;
+    z-index: 1;
+}
+
+#hidden {
+    display: none;
+}
+
+footer:hover,
+footer span #hidden:hover {
+    font-size: 4vw;
+    transition: all 0.5s;
+}
+    
+@media only screen and (max-width: 500px) {
+    header {
+        white-space: nowrap;
+    }
+    .maindiv {
+        background: none;
+        box-shadow: none;
+        transition: none;
+    }
+    .button,
+    .button span,
+    .button span:after,
+    .button:hover span,
+    .button:hover span:after {
+        transition: none;
+        box-shadow: none;
+    }
+    footer,
+    footer:hover,
+    footer span {
+        transition: none;
+    }

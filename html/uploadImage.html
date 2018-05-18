@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Upload File</title>
+    <meta http-equiv="Content-Type" content="multipart/form-data">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css">
+
+</head>
+
+<body>
+    <header class="info">Select a file to upload...</header>
+    <main>
+        <div class="maindiv">
+            <form id="uploadImage" method="POST" enctype="multipart/form-data" action="up" target="_self">
+                <table>
+                    <tr>
+                        <td><input type="file" name="filetoupload" multiple="multiple" required="true"></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" type="submit"><span>Upload</span></button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+<footer><span><a href="/">Home</a></span></footer>
+
+</html>
